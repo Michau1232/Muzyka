@@ -1,22 +1,14 @@
 const discord = require("discord.js")
 const client = new discord.Client({ disableEveryone: true, disabledEvents: ["TYPING_START"] });
 const { readdirSync } = require("fs");
-const moment = require('moment')
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./config.json")
 
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
-  const activities_list = [ 
-    ` `,
-    `🎂 Autor: Michau#9986`, 
-    `🍕 prefix "<"`,
-    `📅 ${moment().format("DD.MM.YYYY")} `,
-    `🌭 <mhelp - Pomoc`,
-    
-  
-      ]
+  client.user.setActivity(`Music | ${PREFIX}mhelp`);
+
     })
 
 
