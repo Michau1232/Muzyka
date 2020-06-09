@@ -27,9 +27,7 @@ module.exports = {
     const playlistPattern = /^.*(youtu.be\/|list=)([^#\&\?]*).*/gi;
     const urlcheck = videoPattern.test(args[0]);
 
-    if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
-      return message.channel.send("Playlista, nie może być puszczona!");
-    }
+   
 
     const serverQueue = message.client.queue.get(message.guild.id);
 
