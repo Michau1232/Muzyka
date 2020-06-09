@@ -9,7 +9,7 @@ client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
   const activities_list = [ 
     ` `,
-    `🎂 Autor: ${author}`, 
+    `🎂 Autor: Michau#9986`, 
     `🍕 prefix "${prefix}"`,
     `📅 ${moment().format("DD.MM.YYYY")} `,
     `🌭 ${prefix}mhelp - Pomoc`,
