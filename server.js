@@ -60,32 +60,13 @@ client.on("message", message => {
         const avatar = client.user.avatarURL()
     
         switch(args[0]){
+    
  
-    case 'help':
-      const embed3 = new discord.MessageEmbed()
-      .setTitle('**Komendy Bota**')
-      .addField(`${PREFIX}` + '**loop**', 'Zapętla muzykę')
-      .addField(`${PREFIX}` + '**lyrics**', 'Wyświetla Tekst piosenki (o ile jest dostępny!)')
-      .addField(`${PREFIX}` + '**name**', 'Wyświetla nazwe puszczonej piosenki')
-      .addField(`${PREFIX}` + '**pause**', 'Pauzuje muzykę')
-      .addField(`${PREFIX}` + '**play `<muzyka>`**', 'Puszcza daną muzykę')
-      .addField(`${PREFIX}` + '**queue**', 'Wyświetla kolejkę muzyk do puszczenia')
-      .addField(`${PREFIX}` + '**resume**', 'Wznawia zapauzowaną piosenkę')
-      .addField(`${PREFIX}` + '**skip**', 'Pomija piosenkę')
-      .addField(`${PREFIX}` + '**stop**', 'Zatrzymuje puszczanie piosenek')
-      .setColor(0xffe776)
-      .setThumbnail(avatar)
-      .setFooter('Mam nadzieję że miło spędzisz tu czas!')
-      .setTimestamp()
-      message.channel.send(embed3)
-
-      console.log(`WIADOMOŚĆ Z KOMENDY || ${message.author.username} || TREŚĆ: ${message.content} || ID: ${message.author} || Kanał ${message.channel.name}`) 
-     
-      break;
+      }     
+    })
   }
   
-})
-  }
+  
 });
 
 
