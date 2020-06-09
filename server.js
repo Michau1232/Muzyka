@@ -8,6 +8,7 @@ const { TOKEN, PREFIX } = require("./config.json")
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
   client.user.setActivity(`🎶Muzyka | ❓${PREFIX}help - pomoc`);
+  (`Autor: ${AUTHOR}`)
 
     })
 
@@ -20,7 +21,7 @@ client.on("error", console.error)
 client.commands = new discord.Collection()
 client.prefix = PREFIX
 client.queue = new Map();
-
+client.author = AUTHOR
 
 //LETS LOAD ALL FILES
 const cmdFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js"))
