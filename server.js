@@ -8,7 +8,7 @@ const { TOKEN, PREFIX } = require("./config.json")
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
   client.user.setActivity(`🎶Muzyka | ❓${PREFIX}help - pomoc`);
-  client.user.setActivity(`🎶Muzyka | 🐱‍👓Autor: ${author}`);
+  (`🎶Muzyka | 🐱‍👓Autor: ${author}`);
   
 
     })
