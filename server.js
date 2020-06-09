@@ -6,9 +6,18 @@ const { TOKEN, PREFIX } = require("./config.json")
 
 //CLIENT EVENTS
 client.on("ready", () => {
-  console.log(`Zalogowano jako ${client.user.tag}`),
-  client.user.setActivity(`❓ <mhelp - aby wyświetlić spis komend`); 
-})
+  console.log(`Zalogowano jako ${client.user.tag}`)
+  const activities_list = [ 
+    ` `,
+    `🎂 Autor: ${author}`, 
+    `🍕 prefix "${prefix}"`,
+    `📅 ${moment().format("DD.MM.YYYY")} `,
+    `🌭 ${prefix}mhelp - Pomoc`,
+    `🌮 wersja: ${version}`,
+    
+  
+      ]
+    })
 
 
 client.on("warn", info => console.log(info));
