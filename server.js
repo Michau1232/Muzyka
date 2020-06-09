@@ -7,7 +7,7 @@ const { TOKEN, PREFIX } = require("./config.json")
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
-  client.user.setActivity(`Music | ${PREFIX}mhelp`);
+  client.user.setActivity(`🎶Muzyka | ❓${PREFIX}help - pomoc`);
 
     })
 
@@ -60,8 +60,8 @@ client.on("message", message => {
         const avatar = client.user.avatarURL()
     
         switch(args[0]){
-    
-          case 'mhelp':
+          
+          case 'help':
             const embed3 = new discord.MessageEmbed()
             .setTitle('**Komendy Bota**')
             .addField(`${PREFIX}` + '**loop**', 'Zapętla muzykę')
@@ -80,6 +80,9 @@ client.on("message", message => {
             message.channel.send(embed3)
             console.log(`WIADOMOŚĆ Z KOMENDY || ${message.author.username} || TREŚĆ: ${message.content} || ID: ${message.author} || Kanał ${message.channel.name}`) 
             break;
+
+    
+ 
       }     
     })
   }
