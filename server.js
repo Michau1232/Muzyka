@@ -7,7 +7,7 @@ const { TOKEN, PREFIX } = require("./config.json")
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
-  client.user.setActivity(`❓${PREFIX}musichelp!`)
+  client.user.setActivity (`🎶${PREFIX}mhelp!`)
 })
 
 client.on("warn", info => console.log(info));
@@ -59,25 +59,25 @@ client.on("message", message => {
     
         switch(args[0]){
     
-            case 'musichelp':
-              const embed3 = new discord.MessageEmbed()
-              .setTitle('**Komendy Bota**')
-              .addField(`${PREFIX}` + '**loop**', 'Zapętla muzykę')
-              .addField(`${PREFIX}` + '**lyrics**', 'Wyświetla Tekst piosenki (o ile jest dostępny!)')
-              .addField(`${PREFIX}` + '**name**', 'Wyświetla nazwe puszczonej piosenki')
-              .addField(`${PREFIX}` + '**pause**', 'Pauzuje muzykę')
-              .addField(`${PREFIX}` + '**play `<muzyka>`**', 'Puszcza daną muzykę')
-              .addField(`${PREFIX}` + '**queue**', 'Wyświetla kolejkę muzyk do puszczenia')
-              .addField(`${PREFIX}` + '**resume**', 'Wznawia zapauzowaną piosenkę')
-              .addField(`${PREFIX}` + '**skip**', 'Pomija piosenkę')
-              .addField(`${PREFIX}` + '**stop**', 'Zatrzymuje puszczanie piosenek')
-              .setColor(0xffe776)
-              .setThumbnail(avatar)
-              .setFooter('Mam nadzieję że miło spędzisz tu czas!')
-              .setTimestamp()
-              message.channel.send(embed3)
-              console.log(`WIADOMOŚĆ Z KOMENDY || ${message.author.username} || TREŚĆ: ${message.content} || ID: ${message.author} || Kanał ${message.channel.name}`) 
-              break;
+          case 'mhelp':
+            const embed3 = new discord.MessageEmbed()
+            .setTitle('**Komendy Bota**')
+            .addField(`${PREFIX}` + '**loop**', 'Zapętla muzykę')
+            .addField(`${PREFIX}` + '**lyrics**', 'Wyświetla Tekst piosenki (o ile jest dostępny!)')
+            .addField(`${PREFIX}` + '**name**', 'Wyświetla nazwe puszczonej piosenki')
+            .addField(`${PREFIX}` + '**pause**', 'Pauzuje muzykę')
+            .addField(`${PREFIX}` + '**play `<muzyka>`**', 'Puszcza daną muzykę')
+            .addField(`${PREFIX}` + '**queue**', 'Wyświetla kolejkę muzyk do puszczenia')
+            .addField(`${PREFIX}` + '**resume**', 'Wznawia zapauzowaną piosenkę')
+            .addField(`${PREFIX}` + '**skip**', 'Pomija piosenkę')
+            .addField(`${PREFIX}` + '**stop**', 'Zatrzymuje puszczanie piosenek')
+            .setColor(0xffe776)
+            .setThumbnail(avatar)
+            .setFooter('Mam nadzieję że miło spędzisz tu czas!')
+            .setTimestamp()
+            message.channel.send(embed3)
+            console.log(`WIADOMOŚĆ Z KOMENDY || ${message.author.username} || TREŚĆ: ${message.content} || ID: ${message.author} || Kanał ${message.channel.name}`) 
+            break;
       }     
     })
   }
@@ -90,3 +90,4 @@ client.on("message", message => {
 
 //DONT DO ANYTHING WITH THIS TOKEN lol
 client.login(TOKEN)
+
