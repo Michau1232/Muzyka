@@ -86,7 +86,7 @@ client.on("message", message => {
           .addField(`${PREFIX}` + '**resume**', 'Wznawia zapauzowaną piosenkę')
           .addField(`${PREFIX}` + '**skip**', 'Pomija piosenkę')
           .addField(`${PREFIX}` + '**stop**', 'Zatrzymuje puszczanie piosenek')
-          .setColor(0xffe776)
+          .setColor(0x9997fc)
           .setThumbnail(avatar)
           .setFooter('Mam nadzieję że miło spędzisz tu czas!')
           .setTimestamp()
