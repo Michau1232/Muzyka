@@ -19,7 +19,7 @@ module.exports = {
       serverQueue.connection.dispatcher.pause(true)
       
       
-      return message.channel.send("✅ | Zapauzowano obecnie grającą muzykę!")
+      return message.channel.send("✅ | ``Zapauzowano obecnie grającą muzykę!`` ")
   }  
   }
 }
