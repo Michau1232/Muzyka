@@ -1,6 +1,7 @@
 const discord = require("discord.js")
 const client = new discord.Client({ disableEveryone: true, disabledEvents: ["TYPING_START"] });
 const { readdirSync } = require("fs");
+const moment = require('moment')
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./config.json")
 
@@ -10,10 +11,9 @@ client.on("ready", () => {
   const activities_list = [ 
     ` `,
     `🎂 Autor: Michau#9986`, 
-    `🍕 prefix "${prefix}"`,
+    `🍕 prefix "<"`,
     `📅 ${moment().format("DD.MM.YYYY")} `,
-    `🌭 ${prefix}mhelp - Pomoc`,
-    `🌮 wersja: ${version}`,
+    `🌭 <mhelp - Pomoc`,
     
   
       ]
