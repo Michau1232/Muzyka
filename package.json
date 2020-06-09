@@ -2,9 +2,10 @@
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
-  "name": "lwia-muza",
+  "author": "Michau#9986",
+  "name": "rzesza-music",
   "version": "1.1.0",
-  "description": "Bot muzyczny do Lwiej Ziemii",
+  "description": "Bot muzyczny do IV RZESZY",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
