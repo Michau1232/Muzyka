@@ -20,5 +20,8 @@ module.exports = {
     serverQueue.connection.dispatcher.end();
 
     serverQueue.textChannel.send("**Zatrzymano granie obecnej piosenki!**");
+  
+
+    
   }
 };
