@@ -11,7 +11,7 @@ client.on("ready", () => {
   
 const activities_list = [ 
   ` `,
-  `🐱‍👓 Autor: ${AUTHOR}`, 
+  `🐱‍👓 Autor: Michau#9986`, 
   `❓ prefix "${PREFIX}"`,
   `🎥 Ogląda IV RZESZA!`,
   `🔎 ${PREFIX}help - Pomoc`,
@@ -35,7 +35,7 @@ client.on("error", console.error)
 client.commands = new discord.Collection()
 client.prefix = PREFIX
 client.queue = new Map();
-client.author = AUTHOR
+
 
 
 //LETS LOAD ALL FILES
