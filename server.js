@@ -7,11 +7,24 @@ const { TOKEN, PREFIX } = require("./config.json")
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log(`Zalogowano jako ${client.user.tag}`)
-  client.user.setActivity(`🎶Muzyka | ❓${PREFIX}help - pomoc`);
- 
+});
   
+const activities_list = [ 
+  ` `,
+  `🐱‍👓 Autor: ${author}`, 
+  `❓ prefix "${prefix}"`,
+  `🎥 Ogląda IV RZESZA!`,
+  `🔎 ${prefix}help - Pomoc`,
+  ];
 
-    })
+
+  client.on('ready', () => {
+      setInterval(() => {
+          const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+          client.user.setActivity(activities_list[index], { type: 'LISTENING' });
+      }, 5000); 
+    });
+  
 
 
 client.on("warn", info => console.log(info));
