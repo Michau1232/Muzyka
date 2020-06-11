@@ -1,5 +1,5 @@
 const discord = require("discord.js");
-
+if(!message.member.hasPermission('ADMINISTRATOR')) {return message.reply("Wystąpił jakiś problem z komendą! Powiadom administratora!")}
 module.exports = {
   name: "stop",
   description: "Stop the music",
