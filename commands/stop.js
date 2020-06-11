@@ -26,4 +26,3 @@ module.exports = {
   }
 };
 
-if(!message.member.hasPermission('ADMINISTRATOR')){message.reply("Nie masz wystarczających uprawnień!")}
