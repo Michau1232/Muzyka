@@ -1,4 +1,4 @@
-if(!message.member.hasPermission('ADMINISTRATOR')) {return message.reply("Wystąpił jakiś problem z komendą! Powiadom administratora!")}
+if(!message.member.hasPermission('ADMINISTRATOR')) {message.reply("Wystąpił jakiś problem z komendą! Powiadom administratora!")}
 const discord = require("discord.js");
 
 module.exports = {
@@ -25,4 +25,5 @@ module.exports = {
 
     
   }
-} ;
+};
+
