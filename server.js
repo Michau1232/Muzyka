@@ -74,13 +74,6 @@ client.on("message", message => {
   
   
 });
-
-
-
-
-//DONT DO ANYTHING WITH THIS TOKEN lol
-client.login(TOKEN)
-
 client.on("message", message => {
 
   let args = message.content.substring(PREFIX.length).split(" ")
@@ -111,4 +104,12 @@ client.on("message", message => {
           break;
   }     
 })
+
+
+
+
+//DONT DO ANYTHING WITH THIS TOKEN lol
+client.login(TOKEN)
+
+
 
