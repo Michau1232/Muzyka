@@ -13,7 +13,7 @@ const activities_list = [
   ` `,
   `🐱‍👓 Autor: Michau#9986`, 
   `❓ prefix "${PREFIX}"`,
-  `🎥 Ogląda IV RZESZA!`,
+  `🎥 Ogląda DOJO!`,
   `🔎 ${PREFIX}help - Pomoc`,
   ];
 
